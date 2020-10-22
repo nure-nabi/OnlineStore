@@ -25,6 +25,7 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/storeImageTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_camera"
@@ -34,22 +35,16 @@
                         android:drawablePadding="10dp"
                         android:textSize="18dp" />
                     <ImageView
+                        android:id="@+id/storeImageView"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:src="@drawable/ic_launcher_background"
                         android:scaleType="fitXY"/>
                 </LinearLayout>
-                <EditText
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edt_bg"
-                    android:hint="Store Image"
-                    android:padding="15dp"
-                    android:textSize="18dp" />
 
                 <EditText
+                    android:id="@+id/storeNamedt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -59,6 +54,7 @@
                     android:textSize="18dp" />
 
                 <EditText
+                    android:id="@+id/addressEdt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -68,15 +64,18 @@
                     android:textSize="18dp" />
 
                 <EditText
+                    android:id="@+id/phoneNoEdt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/edt_bg"
                     android:hint="Phone No"
+                    android:inputType="phone"
                     android:padding="15dp"
                     android:textSize="18dp" />
 
                 <EditText
+                    android:id="@+id/emailEdt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -86,6 +85,7 @@
                     android:textSize="18dp" />
 
                 <EditText
+                    android:id="@+id/operationHourEdt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -99,6 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
+                        android:id="@+id/addProductBtn"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -109,6 +110,7 @@
                         android:textColor="@color/white"
                         android:textStyle="bold" />
                     <Button
+                        android:id="@+id/cancelBtn"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
